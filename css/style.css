@@ -1,72 +1,78 @@
-/*wildcard*/
-* {
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+* { /* Selecteur universel wildcard*/
+    font-family: 'Raleway', sans-serif; /* Choix de la police Raleway et sans-serif si releway indisponible */
 }
 
 
-:root {
-    --main-color: #0065FC;
-    --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+:root { /* Déclaration de variables La pseudo-classe :root permet de cibler la racine de l'arbre représentant le document. Pour un document HTML, :root ciblera donc l'élément <html> et aura le même comportement que le sélecteur html mais sa spécificité sera plus forte. */
+    --main-color: #0065FC; /* Déclaration de variable main-color en bleu*/
+    --main-bg-color: #F2F2F2; /* Déclaration de variable main-bg-color en gris*/
+    --filter-bg-color: #DEEBFF; /* Déclaration de variable filter-bg-color en bleu clair*/
 }
 
-.fa-solid {
+.fa-solid { /* Font awesome solid */
     color: var(--main-color);
 }
 
-body {
-    display: flex;
-    justify-content: center;
+body { /* Body */
+    display: flex; /* Flexbox */
+    justify-content: center; /* Centrer */
 }
 
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+body, html {
+    margin: 0; /* Margin 0 */
+    padding: 0; /* Padding 0 */
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+.main-container { /* Propriétés Class main-container */
+    width: 100%; /* Largeur 100% */
+    max-width: 1440px; /* Largeur max 1440px */
+    padding: 0 50px; /* Padding 0 50px */
+    box-sizing: border-box;/* Permet de définir la boite de chaque élément avec marging et padding compris pour la taille*/
 }
 
-.logo {
-    width: 121px;
-    padding: 30px 50px 30px 0;
+.header { /* Propriétés Header */
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Espace entre */
+    align-items: center; /* Alignement */
+    margin: 0; /* Margin 0 */
+    padding: 0; /* Padding 0 */
 }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 10;
+.logo { /* Propriétés Class Logo */
+    width: 61px; /* Largeur 61px */
+    padding: 50px 30px 30px 0px; /* Padding 30px 50px 30px 0 */
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 30px ;
-    display: inline-block;
-    border-top: 2px solid transparent;
-}
-nav ul li {
-    padding: 0 25px;
+nav ul { /* Propriétés Class nav ul */
+    display: flex; /* Affichage en flexbox pour aligner les éléments côte à côte */
+    list-style-type: none; /* Pas de style de liste */
+    margin: 0; /* Margin 0 */
+    padding: 0; /* Padding 0 */
+
+
 }
 
-nav ul li a:hover,
-
-nav ul li a:focus {
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+nav ul li a { /* Propriétés Class nav ul li a */
+    text-decoration: none; /* Pas de soulignement */
+    color: black; /* Couleur noir */
+    padding: 37px 30px ; /* Padding 37px 30px */
+    display: inline-block; /* Affichage en ligne */
+    border-top: 2px solid transparent; /* Bordure 2px solide transparent */
+}
+nav ul li { /* Propriétés Class nav ul li */
+    padding: 0; /* Padding 0 */
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+nav ul li a:hover,  /* Propriétés Class nav ul li a:hover */
+
+nav ul li a:focus { /* Propriétés Class nav ul li a:focus */
+    color: #0065FC; /* Couleur bleu */
+    border-top: 2px solid #0065FC;  /* Bordure 2px solide bleu */
+}
+
+a { /* Curly bracket les liens */ 
+    color: inherit; /* Couleurs heritées */
+    text-decoration: none; /* Retire le formatage par defaut ex user agent stylesheet dans chrome violet souligné */
 }
 
 /* Styles de la section de recherche */
