@@ -1,48 +1,76 @@
-<!DOCTYPE html> <!-- Doctype pour indiquer au navigateur qu'il s'agit d'un fichier HTML -->
-<html lang="fr"> <!-- Langue de la page en français -->
-  <head> <!-- En-tête de la page ce que l'on ne voit pas sur la page -->
-    <meta charset="UTF-8" /> <!-- Encodage des caractères de la page La ligne de code que vous avez sélectionnée est une balise HTML `<meta>` qui définit l'encodage des caractères de la page. L'attribut est défini sur `"UTF-8"`, ce qui indique que l'encodage des caractères utilisé pour cette page est UTF-8. UTF-8 est un encodage de caractères universel qui peut représenter tous les caractères du monde, ce qui en fait un choix courant pour les pages web multilingues. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--  la balise `<meta>` est utilisée pour définir la vue du port (viewport) pour le document. Le viewport est la zone visible de la page web dans le navigateur. En spécifiant la largeur du viewport et l'échelle initiale, vous pouvez contrôler la façon dont la page est affichée sur différents appareils et résolutions d'écran. La valeur [`width=device-width`] indique que la largeur du viewport doit être égale à la largeur de l'appareil utilisé pour afficher la page. Cela signifie que la page s'adaptera automatiquement à la largeur de l'écran, quelle que soit sa taille. La valeur `initial-scale=1.0` spécifie l'échelle initiale du viewport. Une valeur de 1.0 signifie que la page est affichée à une échelle de 100%, sans zoom. Nécessaire pour un site responsive adapté à différents appareils et résolutions d'écran. Cela garantit une expérience utilisateur cohérente, quelle que soit la taille de l'écran utilisé pour afficher la page. -->
-    <title>Booki</title> <!-- Titre de la page qui s'affiche dans l'onglet du navigateur -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" /> <!-- Préconnexion à l'API Google Fonts pour accélérer le chargement des polices --> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <!-- Préconnexion à l'API Google Fonts pour accélérer le chargement des polices -->
-    <link   
+<!DOCTYPE html>
+<!-- Doctype pour indiquer au navigateur qu'il s'agit d'un fichier HTML -->
+<html lang="fr">
+  <!-- Langue de la page en français -->
+  <head>
+    <!-- En-tête de la page ce que l'on ne voit pas sur la page -->
+    <meta charset="UTF-8" />
+    <!-- Encodage des caractères de la page La ligne de code que vous avez sélectionnée est une balise HTML `<meta>` qui définit l'encodage des caractères de la page. L'attribut est défini sur `"UTF-8"`, ce qui indique que l'encodage des caractères utilisé pour cette page est UTF-8. UTF-8 est un encodage de caractères universel qui peut représenter tous les caractères du monde, ce qui en fait un choix courant pour les pages web multilingues. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  la balise `<meta>` est utilisée pour définir la vue du port (viewport) pour le document. Le viewport est la zone visible de la page web dans le navigateur. En spécifiant la largeur du viewport et l'échelle initiale, vous pouvez contrôler la façon dont la page est affichée sur différents appareils et résolutions d'écran. La valeur [`width=device-width`] indique que la largeur du viewport doit être égale à la largeur de l'appareil utilisé pour afficher la page. Cela signifie que la page s'adaptera automatiquement à la largeur de l'écran, quelle que soit sa taille. La valeur `initial-scale=1.0` spécifie l'échelle initiale du viewport. Une valeur de 1.0 signifie que la page est affichée à une échelle de 100%, sans zoom. Nécessaire pour un site responsive adapté à différents appareils et résolutions d'écran. Cela garantit une expérience utilisateur cohérente, quelle que soit la taille de l'écran utilisé pour afficher la page. -->
+    <title>Booki</title>
+    <!-- Titre de la page qui s'affiche dans l'onglet du navigateur -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Préconnexion à l'API Google Fonts pour accélérer le chargement des polices -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Préconnexion à l'API Google Fonts pour accélérer le chargement des polices -->
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-    /> <!-- Lien vers la police Raleway sur Google Fonts -->
+    />
+    <!-- Lien vers la police Raleway sur Google Fonts -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    /> <!-- Lien vers la bibliothèque Font Awesome pour les icônes -->
-    <link rel="stylesheet" href="./css/style.css" /> <!-- Lien vers le fichier CSS de style de la page -->
-  </head> <!-- Fin de l'en-tête de la page -->
+    />
+    <!-- Lien vers la bibliothèque Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Lien vers le fichier CSS de style de la page -->
+  </head>
+  <!-- Fin de l'en-tête de la page -->
 
-  <body> <!-- Corps de la page ce que l'on voit sur la page / Balise sémentique -->
-    <div class="main-container"> <!-- Div Conteneur principal de la page avec application de la class associée -->
-      <header class="header"> <!-- En-tête de la page -->
-        <img src="images/logo/Booki.png" alt="Logo Booki" class="logo" /> <!-- Logo de la page avec application de la class logo -->
-        <nav> <!-- Balise sémentique Navigation de la page -->
-          <ul> <!-- Liste non ordonnée -->
-            <li><a href="#hebergements">Hébergements</a></li> <!-- 1er élément de la liste avec un lien display inline contrairement aux div qui sont display block -->
-            <li><a href="#activites">Activités</a></li> <!-- 2ème élément de la liste avec un lien display inline contrairement aux div qui sont display block -->
-          </ul> <!-- Fin de la liste non ordonnée -->
-        </nav> <!-- Fin de la balise sémentique Navigation de la page -->
-      </header> <!-- Fin de l'en-tête de la page -->
+  <body>
+    <!-- Corps de la page ce que l'on voit sur la page / Balise sémentique -->
+    <div class="main-container">
+      <!-- Div Conteneur principal de la page avec application de la class associée -->
+      <header class="header">
+        <!-- En-tête de la page -->
+        <img src="images/logo/Booki.png" alt="Logo Booki" class="logo" />
+        <!-- Logo de la page avec application de la class logo -->
+        <nav>
+          <!-- Balise sémentique Navigation de la page -->
+          <ul>
+            <!-- Liste non ordonnée -->
+            <li><a href="#hebergements">Hébergements</a></li>
+            <!-- 1er élément de la liste avec un lien display inline contrairement aux div qui sont display block -->
+            <li><a href="#activites">Activités</a></li>
+            <!-- 2ème élément de la liste avec un lien display inline contrairement aux div qui sont display block -->
+          </ul>
+          <!-- Fin de la liste non ordonnée -->
+        </nav>
+        <!-- Fin de la balise sémentique Navigation de la page -->
+      </header>
+      <!-- Fin de l'en-tête de la page -->
 
-      <main>
-        <section class="search-section">
-          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <p>En plein centre-ville ou en pleine nature</p>
-          <form class="search-form">
+      <main> <!-- Balise sémentique Corps de la page -->
+        <section class="search-section"> <!-- Balise sémentique Section de la page -->
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1> <!-- Titre de la section h1 -->
+          <p>En plein centre-ville ou en pleine nature</p> <!-- Paragraphe de la section -->
+          <div class="search-form">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" placeholder="Marseille, France" />
+              <button>Rechercher</button>
+          </div>
+          <!-- <form class="search-form">
             <div class="search-icon">
               <i class="fas fa-location-dot"></i>
             </div>
             <input type="text" placeholder="Marseille, France" />
             <button type="submit">Rechercher</button>
-          </form>
+          </form> -->
         </section>
 
         <div class="hebergements-and-populaires">

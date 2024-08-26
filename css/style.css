@@ -1,271 +1,308 @@
-* { /* Selecteur universel wildcard*/
-    font-family: 'Raleway', sans-serif; /* Choix de la police Raleway et sans-serif si releway indisponible */
+* {
+  /* Selecteur universel wildcard*/
+  font-family: "Raleway", sans-serif; /* Choix de la police Raleway et sans-serif si releway indisponible */
 }
 
-
-:root { /* Déclaration de variables La pseudo-classe :root permet de cibler la racine de l'arbre représentant le document. Pour un document HTML, :root ciblera donc l'élément <html> et aura le même comportement que le sélecteur html mais sa spécificité sera plus forte. */
-    --main-color: #0065FC; /* Déclaration de variable main-color en bleu*/
-    --main-bg-color: #F2F2F2; /* Déclaration de variable main-bg-color en gris*/
-    --filter-bg-color: #DEEBFF; /* Déclaration de variable filter-bg-color en bleu clair*/
+:root {
+  /* Déclaration de variables La pseudo-classe :root permet de cibler la racine de l'arbre représentant le document. Pour un document HTML, :root ciblera donc l'élément <html> et aura le même comportement que le sélecteur html mais sa spécificité sera plus forte. */
+  --main-color: #0065fc; /* Déclaration de variable main-color en bleu*/
+  --main-bg-color: #f2f2f2; /* Déclaration de variable main-bg-color en gris*/
+  --filter-bg-color: #deebff; /* Déclaration de variable filter-bg-color en bleu clair*/
 }
 
-.fa-solid { /* Font awesome solid */
-    color: var(--main-color);
+.fa-solid {
+  /* Font awesome solid */
+  color: var(--main-color); /* Couleur de la variable main-color */
 }
 
-body { /* Body */
-    display: flex; /* Flexbox */
-    justify-content: center; /* Centrer */
+body {
+  /* Body */
+  display: flex; /* Flexbox */
+  justify-content: center; /* Centrer */
 }
 
-body, html {
-    margin: 0; /* Margin 0 */
-    padding: 0; /* Padding 0 */
+body,
+html {
+  margin: 0; /* Margin 0 */
+  padding: 0; /* Padding 0 */
 }
 
-.main-container { /* Propriétés Class main-container */
-    width: 100%; /* Largeur 100% */
-    max-width: 1440px; /* Largeur max 1440px */
-    padding: 0 50px; /* Padding 0 50px */
-    box-sizing: border-box;/* Permet de définir la boite de chaque élément avec marging et padding compris pour la taille*/
+.main-container {
+  /* Propriétés Class main-container */
+  width: 100%; /* Largeur 100% */
+  max-width: 1440px; /* Largeur max 1440px */
+  padding: 0 50px; /* Padding 0 50px */
+  box-sizing: border-box; /* Permet de définir la boite de chaque élément avec marging et padding compris pour la taille*/
 }
 
-.header { /* Propriétés Header */
-    display: flex; /* Flexbox */
-    justify-content: space-between; /* Espace entre */
-    align-items: center; /* Alignement */
-    margin: 0; /* Margin 0 */
-    padding: 0; /* Padding 0 */
+.header {
+  /* Propriétés Header */
+  display: flex; /* Flexbox */
+  justify-content: space-between; /* Espace entre */
+  align-items: center; /* Alignement */
+  margin: 0; /* Margin 0 */
+  padding: 0; /* Padding 0 */
 }
 
-.logo { /* Propriétés Class Logo */
-    width: 61px; /* Largeur 61px */
-    padding: 50px 30px 30px 0px; /* Padding 30px 50px 30px 0 */
+.logo {
+  /* Propriétés Class Logo */
+  width: 61px; /* Largeur 61px */
+  padding: 50px 30px 30px 0px; /* Padding 30px 50px 30px 0 */
 }
 
-nav ul { /* Propriétés Class nav ul */
-    display: flex; /* Affichage en flexbox pour aligner les éléments côte à côte */
-    list-style-type: none; /* Pas de style de liste */
-    margin: 0; /* Margin 0 */
-    padding: 0; /* Padding 0 */
-
-
+nav ul {
+  /* Propriétés Class nav ul */
+  display: flex; /* Affichage en flexbox pour aligner les éléments côte à côte */
+  list-style-type: none; /* Pas de style de liste */
+  margin: 0; /* Margin 0 */
+  padding: 0; /* Padding 0 */
 }
 
-nav ul li a { /* Propriétés Class nav ul li a */
-    text-decoration: none; /* Pas de soulignement */
-    color: black; /* Couleur noir */
-    padding: 37px 30px ; /* Padding 37px 30px */
-    display: inline-block; /* Affichage en ligne */
-    border-top: 2px solid transparent; /* Bordure 2px solide transparent */
+nav ul li a {
+  /* Propriétés Class nav ul li a */
+  text-decoration: none; /* Pas de soulignement */
+  color: black; /* Couleur noir */
+  padding: 37px 30px; /* Padding 37px 30px */
+  display: inline-block; /* Affichage en ligne */
+  border-top: 2px solid transparent; /* Bordure 2px solide transparent */
 }
-nav ul li { /* Propriétés Class nav ul li */
-    padding: 0; /* Padding 0 */
+nav ul li {
+  /* Propriétés Class nav ul li */
+  padding: 0; /* Padding 0 */
 }
 
 nav ul li a:hover,  /* Propriétés Class nav ul li a:hover */
 
-nav ul li a:focus { /* Propriétés Class nav ul li a:focus */
-    color: #0065FC; /* Couleur bleu */
-    border-top: 2px solid #0065FC;  /* Bordure 2px solide bleu */
+nav ul li a:focus {
+  /* Propriétés Class nav ul li a:focus */
+  color: #0065fc; /* Couleur bleu */
+  border-top: 2px solid #0065fc; /* Bordure 2px solide bleu */
 }
 
-a { /* Curly bracket les liens */ 
-    color: inherit; /* Couleurs heritées */
-    text-decoration: none; /* Retire le formatage par defaut ex user agent stylesheet dans chrome violet souligné */
+a {
+  /* Curly bracket les liens */
+  color: inherit; /* Couleurs heritées */
+  text-decoration: none; /* Retire le formatage par defaut ex user agent stylesheet dans chrome violet souligné */
 }
 
 /* Styles de la section de recherche */
-.search-section {
-    margin-top: 30px;
+.search-section { /* Propriétés Class search-section */
+  margin-top: 30px; /* Marge en haut 30px */
+}
+.search-section h1 { /* Propriétés Class search-section h1 */
+    font-size: 22px; /* Taille de police 22px */
+    font-weight: bold; /* Police en gras */
+    margin-bottom: 8px; /* Marge en bas 20px */
 }
 
-.search-section h1 {
-    font-size: 22px;
-    margin-bottom: 8px;
-}
-
-.search-section p {
-    margin-bottom: 20px;
-}
+.search-section p { /* Propriétés Class search-section p */
+  margin-bottom: 35px; /* Marge en bas 20px */
+  }
 
 /* Styles du formulaire de recherche */
 .search-form {
-    display: flex;
-    max-width: 400px;
-    height: 50px;
-}
+    display : flex; /* Flexbox */
+    }
+    /* Propriétés Class search-form */
 
-.search-icon {
-    background-color: #F2F2F2;
-    padding: 15px;
-    border-radius: 15px 0 0 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.search-form i {
+    padding: 1rem 1.2rem; /* Padding 1rem */
+    background-color: var(--main-bg-color); /* Couleur de fond main-bg-color */
+    border-radius: 1rem 0 0 1rem;  /* Bordure arrondi 10px */
 }
-
-.search-form input[type="text"] {
-    border: 1px solid #F2F2F2;
-    border-right: none;
-    border-left: none;
-    padding: 0 15px;
-    font-size: 18px;
-    font-weight: bold;
-    flex-grow: 1;
+.search-form input {
+    padding-right: 0rem; /* Padding droit 3rem */
+    padding-left: 1rem; /* Padding gauche 1rem */
+    border: 1px solid var(--main-bg-color);
 }
-
-.search-form input[type="text"]::placeholder {
-    color: black;
-    opacity: 1;
+.search-form input::placeholder {
+    font-size: 16px; /* Taille de police 16px */
+    font-weight: bold; /* Police en gras */
 }
 
 .search-form button {
-    background-color: #0065FC;
-    color: white;
-    font-weight: bold;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 0 15px 15px 0;
-    cursor: pointer;
+    padding: 1rem 1.5rem; /* Padding 1rem 1.5rem */
+    background-color: var(--main-color); /* Couleur de fond main-color */
+    color: white; /* Couleur blanche */
+    font-weight: bold; /* Police en gras */
+    border: none; /* Pas de bordure */
+    border-radius: 0 1rem 1rem 0; /* Bordure arrondi 0 10px 10px 0 */
+    cursor: pointer; /* Curseur pointer */
+  /* border: 1px solid var(--main-bg-color); /* Bordure 1px solide main-bg-color */
+  /* border-right: none; Pas de bordure à droite */
+  /* border-left: none; Pas de bordure à gauche */
+  /* padding: 0 15px; Padding 0 15px */
+  /* font-size: 18px; Taille de police 18px */
+  /* font-weight: bold; Gras */
+  /* flex-grow: 1; Flex-grow 1 */ */
+}
+/* .search-icon {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form input[type="text"] {
+  border: 1px solid #f2f2f2;
+  border-right: none;
+  border-left: none;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.search-form input[type="text"]::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.search-form button {
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
 }
 
 .search-icon i {
-    color: black;
-}
+  color: black;
+} */ */
 
 .section-title {
-    margin: 0;
-    font-size: 22px;
+  margin: 0;
+  font-size: 22px;
 }
 
 .card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .card-title {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .euro {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+  color: var(--main-bg-color);
 }
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+  width: 65%;
 }
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+  width: 32%;
 }
 
 .populaires-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .populaires-cards .card {
-    display: flex;
-    margin-top: 33px;
+  display: flex;
+  margin-top: 33px;
 }
 
 .populaires-cards img {
-    width: 33%;
-    height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+  width: 33%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+  margin-top: 10px;
+  margin-bottom: 4px;
 }
 
 .populaires-cards .card-subtitle {
-    margin: 0;
+  margin: 0;
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
 
-    .hebergements {
-        width: 100%;
-    }
+  .hebergements {
+    width: 100%;
+  }
 
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
 
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .populaires-cards a {
-        width: 30%;
-    }
+  .populaires-cards a {
+    width: 30%;
+  }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
 
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+  /* ... */
 }
