@@ -1,139 +1,131 @@
 * {
   /* Selecteur universel wildcard*/
-  font-family: "Raleway", sans-serif; /* Choix de la police Raleway et sans-serif si releway indisponible */
+  font-family: "Raleway", sans-serif; 
 }
 
 :root {
-  /* Déclaration de variables La pseudo-classe :root permet de cibler la racine de l'arbre représentant le document. Pour un document HTML, :root ciblera donc l'élément <html> et aura le même comportement que le sélecteur html mais sa spécificité sera plus forte. */
-  --main-color: #0065fc; /* Déclaration de variable main-color en bleu*/
-  --main-bg-color: #f2f2f2; /* Déclaration de variable main-bg-color en gris*/
-  --filter-bg-color: #deebff; /* Déclaration de variable filter-bg-color en bleu clair*/
+  --main-color: #0065fc;
+  --main-bg-color: #f2f2f2;
+  --filter-bg-color: #deebff;
 }
 
 .fa-solid {
-  /* Font awesome solid */
-  color: var(--main-color); /* Couleur de la variable main-color */
+  color: var(--main-color);
 }
 
 body {
-  /* Body */
-  display: flex; /* Flexbox */
-  justify-content: center; /* Centrer */
+  display: flex;
+  justify-content: center;
 }
 
 body,
 html {
-  margin: 0; /* Margin 0 */
-  padding: 0; /* Padding 0 */
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
-  /* Propriétés Class main-container */
-  width: 100%; /* Largeur 100% */
-  max-width: 1440px; /* Largeur max 1440px */
-  padding: 0 50px; /* Padding 0 50px */
-  box-sizing: border-box; /* Permet de définir la boite de chaque élément avec marging et padding compris pour la taille*/
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 50px;
+  box-sizing: border-box;
 }
 
 .header {
-  /* Propriétés Header */
-  display: flex; /* Flexbox */
-  justify-content: space-between; /* Espace entre */
-  align-items: center; /* Alignement */
-  margin: 0; /* Margin 0 */
-  padding: 0; /* Padding 0 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
-  /* Propriétés Class Logo */
-  width: 61px; /* Largeur 61px */
-  padding: 50px 30px 30px 0px; /* Padding 30px 50px 30px 0 */
+  width: 61px;
+  padding: 50px 30px 30px 0px;
 }
 
 nav ul {
-  /* Propriétés Class nav ul */
-  display: flex; /* Affichage en flexbox pour aligner les éléments côte à côte */
-  list-style-type: none; /* Pas de style de liste */
-  margin: 0; /* Margin 0 */
-  padding: 0; /* Padding 0 */
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
-  /* Propriétés Class nav ul li a */
-  text-decoration: none; /* Pas de soulignement */
-  color: black; /* Couleur noir */
-  padding: 37px 30px; /* Padding 37px 30px */
-  display: inline-block; /* Affichage en ligne */
-  border-top: 2px solid transparent; /* Bordure 2px solide transparent */
+  text-decoration: none;
+  color: black;
+  padding: 37px 30px;
+  display: inline-block;
+  border-top: 2px solid transparent;
 }
 nav ul li {
-  /* Propriétés Class nav ul li */
-  padding: 0; /* Padding 0 */
+  padding: 0;
 }
 
-nav ul li a:hover,  /* Propriétés Class nav ul li a:hover */
+nav ul li a:hover,
 
 nav ul li a:focus {
-  /* Propriétés Class nav ul li a:focus */
-  color: #0065fc; /* Couleur bleu */
-  border-top: 2px solid #0065fc; /* Bordure 2px solide bleu */
+  color: #0065fc; 
+  border-top: 2px solid #0065fc;
 }
 
 a {
-  /* Curly bracket les liens */
-  color: inherit; /* Couleurs heritées */
-  text-decoration: none; /* Retire le formatage par defaut ex user agent stylesheet dans chrome violet souligné */
+  color: inherit;
+  text-decoration: none;
 }
 
-/* Styles de la section de recherche */
-.search-section { /* Propriétés Class search-section */
-  margin-top: 30px; /* Marge en haut 30px */
+.search-section {
+  margin-top: 30px; 
 }
-.search-section h1 { /* Propriétés Class search-section h1 */
-    font-size: 22px; /* Taille de police 22px */
-    font-weight: bold; /* Police en gras */
-    margin-bottom: 8px; /* Marge en bas 20px */
+.search-section h1 { 
+    font-size: 22px; 
+    font-weight: bold; 
+    margin-bottom: 8px; 
 }
 
-.search-section p { /* Propriétés Class search-section p */
-  margin-bottom: 35px; /* Marge en bas 20px */
+.search-section p { 
+    font-size: 16px;
+    margin-bottom: 35px; 
   }
 
-/* Styles du formulaire de recherche */
 .search-form {
-    display : flex; /* Flexbox */
+    display : flex;
+    margin-bottom: 2rem;
     }
-    /* Propriétés Class search-form */
+  
 
 .search-form i {
-    padding: 1rem 1.2rem; /* Padding 1rem */
-    background-color: var(--main-bg-color); /* Couleur de fond main-bg-color */
-    border-radius: 1rem 0 0 1rem;  /* Bordure arrondi 10px */
+    padding: 1rem 1.2rem;
+    background-color: var(--main-bg-color);
+    border-radius: 1rem 0 0 1rem;
 }
 .search-form input {
-    padding-right: 0rem; /* Padding droit 3rem */
-    padding-left: 1rem; /* Padding gauche 1rem */
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 0rem;
+    padding-left: 1rem;
     border: 1px solid var(--main-bg-color);
 }
 .search-form input::placeholder {
-    font-size: 16px; /* Taille de police 16px */
-    font-weight: bold; /* Police en gras */
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .search-form button {
-    padding: 1rem 1.5rem; /* Padding 1rem 1.5rem */
-    background-color: var(--main-color); /* Couleur de fond main-color */
-    color: white; /* Couleur blanche */
-    font-weight: bold; /* Police en gras */
-    border: none; /* Pas de bordure */
-    border-radius: 0 1rem 1rem 0; /* Bordure arrondi 0 10px 10px 0 */
-    cursor: pointer; /* Curseur pointer */
-    opacity: 0.9; /* Opacité 0.9 */
-    transition: transform 0.2s, opacity 0.2s; /* Transition 0.3s */
+    padding: 1rem 1.5rem;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: transform 0.2s, opacity 0.2s;
     }
 
 .search-form button:hover {
-    opacity: 1; /* Opacité 1 */
+    opacity: 1;
     transform: scale(1.02);
 }
 
@@ -141,50 +133,59 @@ a {
 /* Filtres */
 
 .filter-list {
-    display: flex; /* Flexbox */
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap : 1rem 2rem; /* Espacement 1rem */
-    flex-wrap: wrap; /* Flex wrap */
-    margin-bottom: 1rem; /* Marge en bas 1rem */
+    gap: 15px;
 }
 
-.filter-list h1 {
-    margin-bottom: O; /* Marge en bas 0 */
+.filter-list-container {
+    display: flex;
+    gap: 15px;
+    height: 50px;
 }
 
-.filter {   
-    border: 2px solid var(--main-bg-color);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    transition:all 100ms ease;
-    width: 173px;
-    
-    }
-
-.filter .fas{
-    color: var(--main-color);
-    
+.filter-list .button {
+	padding: 4px 19px;
+    gap: 10px;
+	background-color: white;
+	border-style: solid;
+    border-color: var(--main-bg-color);
+	border-width: 3px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.filter span {
+.filter-list h2 {
+    font-size: 18px;
     font-weight: bold;
-    padding: 1rem;
 }
 
-.filter:hover {
-    background-color: var(--filter-bg-color);
-    transform: scale(1.02);
+.filter-list h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.button {
+	border-radius: 39px;
+}
+
+.button-hover:hover {
+	background-color: var(--filter-bg-color);
+
 }
 
 /* Styles de la section results message */
-.results-message {
+.info-message {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 2rem;
 }
 
-.results-message .fas {
+.info-message .fas {
     color: var(--main-color);
     width: 2rem;
     height: 2rem;
@@ -193,8 +194,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 /* Liste d'appartements */
@@ -226,48 +225,91 @@ a {
   color: var(--main-bg-color);
 }
 
+
+
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+.hebergements-et-populaires {
   display: flex;
   justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.hebergements-et-populaires h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.hebergements-et-populaires h3 {
+    font-size: 16px;
+  }
+
+.hebergements-et-populaires p {
+    font-size: 14px;
+  }
+
+.hebergements-et-populaires section {
   background-color: var(--main-bg-color);
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements-et-populaires {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    border: 1px solid red;
-}
-
-.hebergements-et-populaires section {
-    background-color: var(--main-bg-color);
-    border: 1px solid green;
-    padding: 1rem;
-    border-radius: 1rem;
-    }
-
-    .hebergements-et-populaires .hebergements {
+/* Hebergement */
+.hebergements {
     width: 65%;
 }
 
-.hebergements-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.hebergements-cards-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 0px 30px 0px;
 }
 
+.hebergements-cards-box .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hebergements-cards-box img {
+    object-fit: cover;
+    width: 100%;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 4px;
+}
+
+.hebergements-cards-box .card-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px 0px 15px;
+}
+
+.hebergements-cards-container .card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hebergements-cards-box .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards-box .card-subtitle {
+    margin: 0;
+}
+
+.afficher-plus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}	
+
 /****** Populaires ***********/
-.hebergements-et-populaires section .populaires {
-    width: 33%;
+.populaires {
+    width: 32%;
 }
 
 .populaires-title {
@@ -308,6 +350,87 @@ a {
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
+}
+
+/* Activités */
+
+/****** Activités ***********/
+
+.activities {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.activities-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activities-cards {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.activities-cards a {
+    flex: 1;
+}
+
+.activities-cards img {
+    object-fit: cover;
+    width: 100%;
+    height: 380px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activities-cards .card {
+    padding: 0;
+    height: 100%;
+}
+
+.activities-cards .card-txt {
+   padding: 20px 19px;
+}
+
+.activities-cards h3 {
+    margin: 0;
+    font-size: 16px;
+}
+/* Footer */
+
+footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+footer h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+footer a{
+    font-size: 16px;
+}
+
+.footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex: 1;
+    align-self: stretch;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
